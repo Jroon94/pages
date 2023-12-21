@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Team Q</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    </style>
+</head>
+
+
+<h1>Request account deletion</h1>
+
+<body>
+    <div>Username: </div>
+    <input type="text" id="username" name="username"></input>
+    <button type="submit" onclick="handleSubmit()">Submit</button>
+    <script>
+        function handleSubmit() {
+            var username = document.querySelector('#username').value
+            window.open(`mailto:teamqswim@gmail.com?subject=Account%20Deletion%20Request&body=I%20would%20like%20to%20request%20that%20my%20account%20(Username%3A%20${username})%20and%20all%20associated%20data%20be%20deleted%20permanently.`)
+        }
+    </script>
+</body>
+
+</html>
